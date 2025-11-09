@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ClasificaPTY — Inicio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Librería de Teachable Machine (para imágenes) -->
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.9.5/dist/teachablemachine-image.min.js"></script>
+
+<!-- Tu script principal -->
+<script src="main.js"></script>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><div class="logo">CP</div><div class="brand-text"><h1>ClasificaPTY</h1><div class="tag">Clasificación inteligente de residuos industriales</div></div></div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="como-funciona.html" class="nav-link">Cómo funciona</a>
+        <a href="quienes-somos.html" class="nav-link">Quiénes somos</a>
+        <a href="clasificacion-inteligente.html" class="nav-link">Clasificación</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="hero card">
+      <div class="hero-left">
+        <h2 class="title">ClasificaPTY — Transformando la gestión de residuos industriales</h2>
+        <p class="lead">ClasificaPTY es un sistema de clasificación inteligente que identifica plástico, metal y papel mediante modelos de IA y propone acciones para optimizar procesos industriales y reducir costos.</p>
+        <div class="actions">
+          <a class="btn primary" href="clasificacion-inteligente.html">Ir a Clasificación</a>
+          <a class="btn outline" href="como-funciona.html">Ver proceso</a>
+        </div>
+
+        <div class="cards">
+          <div class="info">
+            <h3>Resumen ejecutivo</h3>
+            <p>Con inversión mínima, ClasificaPTY automatiza la clasificación y entrega un panel de resultados con impacto económico y ambiental.</p>
+          </div>
+          <div class="info">
+            <h3>Validación</h3>
+            <p>Mejoras esperadas: Plástico +25%, Metal +30%, Papel +17% en tasa de clasificación correcta.</p>
+          </div>
+          <div class="info">
+            <h3>Inversión estimada</h3>
+            <p>Desarrollo software: $50. Materiales físicos (opc.): $70. Dashboard: $20. Total: $140 (estimado).</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-right card">
+        <h3>Demo en vivo</h3>
+        <p class="muted">Prueba el modelo en la sección «Clasificación». Usa Live Server y descomprime tu carpeta <code>model/</code>.</p>
+        <div class="stat-row">
+          <div class="stat"><div class="big">+25%</div><div class="muted">Mejora esperada (Plástico)</div></div>
+          <div class="stat"><div class="big">+30%</div><div class="muted">Mejora esperada (Metal)</div></div>
+          <div class="stat"><div class="big">+17%</div><div class="muted">Mejora esperada (Papel)</div></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card">
+      <h3>Opciones de prototipo</h3>
+      <ul class="muted">
+        <li>Simulación software (Teachable Machine + panel de resultados).</li>
+        <li>Prototipo físico sencillo (Arduino + LEDs) para demostración visual.</li>
+        <li>Tinkercad + dashboard para simulación completa sin hardware.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>Hecho por: <strong>Karen Cáceres</strong> • ClasificaPTY — Semana de la Ingeniería</div>
+    </div>
+  </footer>
+
+</body>
+<!-- Teachable Machine Library -->
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.9.5/dist/teachablemachine-image.min.js"></script>
+
+<!-- Tu script principal -->
+<script src="js/main.js"></script>
+
+</html>

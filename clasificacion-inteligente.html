@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clasificación — ClasificaPTY</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand"><div class="logo">CP</div><div class="brand-text"><h1>ClasificaPTY</h1><div class="tag">Clasificación inteligente</div></div></div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="como-funciona.html" class="nav-link">Cómo funciona</a>
+        <a href="quienes-somos.html" class="nav-link">Quiénes somos</a>
+        <a href="clasificacion-inteligente.html" class="nav-link active">Clasificación</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="card">
+      <h2>Clasificación inteligente (demo)</h2>
+      <p class="muted">Descomprime la carpeta <code>model/</code> (exportada desde Teachable Machine) dentro del directorio del proyecto. Usa Live Server para ejecutar la página.</p>
+
+      <div class="card" style="margin-top:12px">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start">
+          <div style="flex:1;min-width:280px">
+            <label>Seleccionar cámara</label>
+            <select id="cameraSelect"></select>
+            <div style="margin-top:10px;display:flex;gap:8px">
+              <button id="startBtn" class="btn primary">Abrir cámara</button>
+              <button id="stopBtn" class="btn outline">Detener</button>
+            </div>
+
+            <div id="errorBox" class="error-box" style="display:none;margin-top:10px"></div>
+
+            <div style="margin-top:12px">
+              <div id="label-container" class="muted">Estado: esperando</div>
+              <div id="counts" style="margin-top:8px" class="muted">Conteo (demo): Plástico 0 • Metal 0 • Papel 0</div>
+            </div>
+          </div>
+
+          <div style="flex:1;min-width:280px" id="webcamArea">
+            <!-- canvas se insertará aquí -->
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px" class="card">
+        <h3>Panel de resultados (simulado)</h3>
+        <p class="muted">La demo acumula detecciones y muestra porcentajes para que puedas presentar impactos y ahorros.</p>
+        <div id="results" style="margin-top:8px">
+          <div>Plástico: <span id="p-plastic">0</span></div>
+          <div>Metal: <span id="p-metal">0</span></div>
+          <div>Papel: <span id="p-paper">0</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">Hecho por: <strong>Karen Cáceres</strong></div></footer>
+
+<!-- Librería Teachable Machine -->
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.9.5/dist/teachablemachine-image.min.js"></script>
+
+<!-- Tu main.js -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
